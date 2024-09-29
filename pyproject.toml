@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "notification-client"
+version = "0.1.0"
+description = "My notification client"
+authors = ["Arnaud Morin <arnaud.morin@gmail.com>"]
+license = "Apache2"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.32.3"
+python-socketio = "^5.11.4"
+plyer = "^2.1.0"
+
+[tool.poetry.scripts]
+notification-client = "notification_client.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
